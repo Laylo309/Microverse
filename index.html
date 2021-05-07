@@ -12,6 +12,46 @@
       crossorigin="anonymous"
     />
 
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #ddd
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+
+      .logo-image{
+    width: 150px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 6px;
+    margin-left: 25px;
+}
+      </style>
+
   </head>
 
   <body>
@@ -19,23 +59,35 @@
 
 
     <header id="header">
-      <img id="header-img" src="http://www.kodhus.com/freecourse-images/about.jpg" height="180" alt="">
+      <!--<img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" height="180" alt=""-->
       <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#header"></a></li>
-          <li><a class="nav-link"  href="#header"></a></li>
-          <li><a class="nav-link"  href="#header"></a></li>
-        </ul>
+        <div class="topnav">
+          <a class="nav-link" href="#header" style="background-color: #ddd;">
+            <div class="logo-image">
+                  <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" class="img-fluid">
+            </div>
+          </a>
+          <a class="nav-link" href="#header">Home</a>
+          <a class="nav-link"  href="#header">News</a>
+          <a class="nav-link"  href="#header">Contact</a>
+      </div>
       </nav>
     </header>
 
-    <video id="video" controls="controls" src="media/shuttle.mp4">
-      Your browser does not support the HTML5 Video element.
-    </video>
-    <form action="https://www.freecodecamp.com/email-submit" method="POST" id ="form">
-      <input type="email" id ="email" name="email" placeholder="Email"></input>
-      <input type="submit" id="submit" value="submit">
-    </form>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+
+      <video id="video" controls="controls" src="media/shuttle.mp4">
+        Your browser does not support the HTML5 Video element.
+      </video>
+      
+      <form action="https://www.freecodecamp.com/email-submit" method="POST" id ="form">
+        <input type="email" id ="email" name="email" placeholder="Email"></input>
+        <input type="submit" id="submit" value="submit">
+      </form>
+
+    </div>
+
+    
 
 
     <!--
