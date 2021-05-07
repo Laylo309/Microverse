@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+
   </head>
 
   <body>
@@ -24,9 +32,9 @@
     <video id="video" controls="controls" src="media/shuttle.mp4">
       Your browser does not support the HTML5 Video element.
     </video>
-    <form action="https://www.freecodecamp.com/email-submit" id ="form">
-      <input type="email" id ="email" placeholder="Email"></input>
-      <input type="submit" id="submit" value="Submit"></input>
+    <form action="https://www.freecodecamp.com/email-submit" method="POST" id ="form">
+      <input type="email" id ="email" name="email" placeholder="Email"></input>
+      <input type="submit" id="submit" value="submit">
     </form>
 
 
